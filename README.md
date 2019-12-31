@@ -75,5 +75,5 @@ sudo service twitchbot stop
 ```
 To make the service start at boot:
 ```
- sudo systemctl enable twitchbot
+sudo systemctl enable twitchbot
 ```
