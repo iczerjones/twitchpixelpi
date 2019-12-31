@@ -1,7 +1,7 @@
 Simple Twitch IRC bot to control a NeoPixel strip with commands.
 
 
-Setup assumes GPIO pin 12 will be used. LED GND must be brought to the Pi's GND pin to avoid garbage data.
+Setup assumes GPIO pin 12 will be used, and that your strip is 60 pixels (use function_library.py if you need to change number of leds or gpio pin). LED GND must be brought to the Pi's GND pin to avoid garbage data.
 
 
 Twitch bot code came from here: https://pimylifeup.com/raspberry-pi-twitch-bot/
