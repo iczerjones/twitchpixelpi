@@ -1,5 +1,8 @@
 Simple Twitch IRC bot to control a NeoPixel strip with commands.
 
+Twitch bot code came from here: https://pimylifeup.com/raspberry-pi-twitch-bot/
+Neopixel code came from here: https://github.com/BSFEMA/RPi_WS2812
+
 config.py needs to be edited as follows:
 
 ```
