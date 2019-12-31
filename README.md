@@ -34,3 +34,45 @@ PASS is the oauth token for the twitch account the bot would be using. Sign into
     and go here: https://twitchapps.com/tmi/ you need the whole oauth including the "oauth:"  
 
 CHAN is the Twitch streamer account you want the bot to read and respond to (again, all letters in lowercase).  
+
+
+To run the bot:
+```
+sudo python3 main.py
+```
+
+To run the bot as a service, and set it to start automatically at boot:
+Create a new file for the service:
+```
+sudo nano /etc/systemd/system/twitchbot.service
+```
+Copy /Paste this code chunk into it:
+```
+[Unit]
+Description=twitch bot
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=python3 /home/pi/twitchpixelpi/main.py
+
+[Install]
+WantedBy=multi-user.target
+```
+Ctrl+O to write out the file (save) then Ctrl+X to exit nano
+
+
+To start the service:
+```
+sudo service twitchbot start
+```
+To stop the service:
+```
+sudo service twitchbot stop
+```
+To make the service start at boot:
+```
+ sudo systemctl enable twitchbot
+```
