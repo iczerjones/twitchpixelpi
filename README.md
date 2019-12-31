@@ -13,35 +13,10 @@ If you run into this error when trying to run the bot:
 ```
 ImportError: No module named _rpi_ws281x
 ```
-Follow these steps:
+Do this:
 ```
-sudo apt-get install python-dev git scons swig
+sudo pip install rpi_ws281x
 ```
-Clone the rpi_ws281x repository
-```
-git clone https://github.com/jgarff/rpi_ws281x.git
-```
-and change into the rpi_ws281x directory
-```
-cd rpi_ws281x
-```
-Next let's build the C library
-```
-sudo scons
-```
-Now change into the library's python directory
-```
-cd python
-```
-Build the python module (remember to use python3)
-```
-sudo python3 setup.py build
-```
-And install it
-```
-sudo python3 setup.py install
-```
-
 
 
 config.py needs to be edited as follows:
