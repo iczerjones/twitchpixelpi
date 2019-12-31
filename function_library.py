@@ -687,6 +687,16 @@ def RandomColors(strip, SpeedDelay):
 def Blank(strip):
     SetAll(strip, Color(0, 0, 0))
     strip.show()
+
+def Cops(strip, StrobeCount, FlashDelay, EndPause):
+    for i in range (0, StrobeCount):
+        SetAll(strip, Color(0, 0, 255))
+        strip.show()
+        time.sleep(FlashDelay)
+        SetAll(strip, Color(255, 0, 0))
+        strip.show()
+        time.sleep(FlashDelay)
+    time.sleep(EndPause)
 """
 Done
 """

@@ -32,3 +32,7 @@ NEO3 = [
 NEO4 = [
     [r"!party", "led"]
 ]
+
+NEO5 = [
+    [r"!cops", "led"]
+]

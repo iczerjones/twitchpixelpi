@@ -58,7 +58,7 @@ def neo_loop3():
     strip.begin()
     t_end = time.time() + 60 * 1
     print("Calling:  Strobe(strip, 255, 255, 255, 5, .25, 3)")
-    Strobe(strip, 255, 255, 255, 20, .15, 3)  
+    Strobe(strip, 200, 200, 200, 20, .15, 3)  
     print("Calling:  Blank(strip)")
     Blank(strip)
 
@@ -71,6 +71,17 @@ def neo_loop4():
     strip.begin()
     print("Calling:  RunningLights(strip, 255, 255, 255, .25)")
     RunningLights(strip, 255, 255, 255, .1)
+    Blank(strip)
+    
+def neo_loop5():
+    #Process arguments
+    opt_parse()
+    #Create NeoPixel object with appropriate configuration.
+    strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    #Intialize the library (must be called once before other functions).
+    strip.begin()
+    print("Calling:  Cops(strip, 5, .5, 3)")
+    Cops(strip, 5, .5, 3)
     Blank(strip)
 """       
 while True:
