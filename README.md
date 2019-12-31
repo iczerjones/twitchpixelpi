@@ -62,7 +62,7 @@ ExecStart=python3 /home/pi/twitchpixelpi/main.py
 [Install]
 WantedBy=multi-user.target
 ```
-Ctrl+O to write out the file (save) then Ctrl+X to exit nano
+Ctrl+O to write out the file (save) then Ctrl+X to exit nano.
 
 
 To start the service:
