@@ -42,6 +42,7 @@ sudo python3 main.py
 ```
 
 To run the bot as a service, and set it to start automatically at boot:
+
 Create a new file for the service:
 ```
 sudo nano /etc/systemd/system/twitchbot.service
