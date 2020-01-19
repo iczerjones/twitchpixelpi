@@ -690,13 +690,13 @@ def Blank(strip):
 
 def Cops(strip, StrobeCount, FlashDelay, EndPause):
     for i in range (0, StrobeCount):
-        SetAll(strip, Color(0, 0, 255))
+        SetAll(strip, Color(0, 0, 175))
         strip.show()
         time.sleep(FlashDelay)
-        SetAll(strip, Color(255, 0, 0))
+        SetAll(strip, Color(175, 0, 0))
         strip.show()
         time.sleep(FlashDelay)
-    time.sleep(EndPause)
+#    time.sleep(EndPause)
 """
 Done
 """

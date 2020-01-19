@@ -27,7 +27,7 @@ def neo_loop1():
     strip.begin()
     print("Calling:  Cylon(strip, 255, 0, 0, 3, .1, .5)")
     for i in range (5):
-        Cylon(strip, (random.randrange(0, 256)), (random.randrange(0, 256)), (random.randrange(0, 256)), 7, .05, .01)   
+        Cylon(strip, (random.randrange(0, 255)), (random.randrange(0, 255)), (random.randrange(0, 255)), 7, .05, .01)   
 
 def neo_loop2():
     #Process arguments
@@ -70,7 +70,7 @@ def neo_loop4():
     #Intialize the library (must be called once before other functions).
     strip.begin()
     print("Calling:  RunningLights(strip, 255, 255, 255, .25)")
-    RunningLights(strip, 255, 255, 255, .1)
+    RunningLights(strip, (random.randrange(0, 125)), (random.randrange(0, 125)), (random.randrange(0, 125)), .1)
     Blank(strip)
     
 def neo_loop5():
