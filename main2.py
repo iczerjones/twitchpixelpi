@@ -70,7 +70,7 @@ def neo_loop4():
     #Intialize the library (must be called once before other functions).
     strip.begin()
     print("Calling:  RunningLights(strip, 255, 255, 255, .25)")
-    RunningLights(strip, (random.randrange(0, 125)), (random.randrange(0, 125)), (random.randrange(0, 125)), .1)
+    RunningLights(strip, (random.randrange(0, 125, 15)), (random.randrange(0, 125, 15)), (random.randrange(0, 125, 15)), .1)
     Blank(strip)
     
 def neo_loop5():
