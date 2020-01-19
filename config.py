@@ -15,10 +15,16 @@ COMMANDS = [
 
 NEO = [
     [r"your_bot_message", "led"] # Message a bot says in your chat for new followers
+# If you a follow/re-follow message that uses the user name at the beginning of the message
+# you can uncomment the next line and edit as necessary   
+#    [r"^.* just followed .*$", "led"]    # Message a bot says in your chat for re-subs
 ]
 
 NEO2 = [
     [r"your_bot_message", "led"] # Message a bot says in your chat for new subscribers
+# If you a sub/re-sub message that uses the user name at the beginning of the message
+# you can uncomment the next line and edit as necessary   
+#    [r"^.* just subscribed for .*$", "led"]    # Message a bot says in your chat for re-subs
 ]
 
 BLANK = [
