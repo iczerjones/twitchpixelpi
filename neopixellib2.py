@@ -2,7 +2,7 @@
 # Author: Tony DiCola (tony@tonydicola.com), Jeremy Garff (jer@jers.net)
 import atexit
 
-import _rpi_ws281x as ws
+import _rpi_ws281x as ws # ImportError? Try `sudo pip3 install rpi_ws281x`.
 
 
 def Color(red, green, blue, white = 0):
