@@ -55,6 +55,22 @@ def bot_loop():
                 if re.match(pattern[0], message):
                     main2.neo_loop5()
 
+            for pattern in config.NEO6:
+                if re.match(pattern[0], message):
+                    main2.neo_loop6()
+
+            for pattern in config.NEO7:
+                if re.match(pattern[0], message):
+                    main2.neo_loop7()
+                    
+            for pattern in config.NEO8:
+                if re.match(pattern[0], message):
+                    main2.neo_loop8()
+
+            for pattern in config.NEO9:
+                if re.match(pattern[0], message):
+                    main2.neo_loop9()
+
             for pattern in config.BLANK:
                 if re.match(pattern[0], message):
                     main2.blank()

@@ -83,6 +83,52 @@ def neo_loop5():
     print("Calling:  Cops(strip, 5, .5, 3)")
     Cops(strip, 5, .5, 3)
     Blank(strip)
+    
+def neo_loop6():
+    #Process arguments
+    opt_parse()
+    #Create NeoPixel object with appropriate configuration.
+    strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    #Intialize the library (must be called once before other functions).
+    strip.begin()
+    print("Calling:  Fire(strip, Heat, 75, 150, .015) #This looks a lot better looped...")
+    for i in range (300):
+        Fire(strip, Heat, 75, 150, .015) 
+    Blank(strip)
+    
+def neo_loop7():
+    #Process arguments
+    opt_parse()
+    #Create NeoPixel object with appropriate configuration.
+    strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    #Intialize the library (must be called once before other functions).
+    strip.begin()
+    print("Calling:  MorseCode(strip, 255, 255, 255, 'SOS. This is a test.', .15)")
+    MorseCode(strip, 255, 255, 255, 'Phr3d13', .15)
+    Blank(strip)
+    
+def neo_loop8():
+    #Process arguments
+    opt_parse()
+    #Create NeoPixel object with appropriate configuration.
+    strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    #Intialize the library (must be called once before other functions).
+    strip.begin()
+    print("Calling:  SnowSparkle(strip, 10, 10, 10, .1, random.uniform(0, .5))")
+    for i in range (30):
+        SnowSparkle(strip, 10, 10, 10, .1, random.uniform(0, .5))
+    Blank(strip)
+    
+def neo_loop9():
+    #Process arguments
+    opt_parse()
+    #Create NeoPixel object with appropriate configuration.
+    strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    #Intialize the library (must be called once before other functions).
+    strip.begin()
+    print("Calling:  NewKitt(strip, 255, 0, 0, 8, .01, .05)")
+    NewKitt(strip, random.randint(0, 150), random.randint(0, 150), random.randint(0, 150), 8, .1, .1)
+    Blank(strip)
 """       
 while True:
             print("Calling:  FadeRGB(strip)")

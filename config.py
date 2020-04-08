@@ -42,3 +42,19 @@ NEO4 = [
 NEO5 = [
     [r"!cops", "led"]
 ]
+
+NEO6 = [
+    [r"!fire", "led"]
+]
+
+NEO7 = [
+    [r"!morse", "led"]
+]
+
+NEO8 = [
+    [r"Thank you very much .* for the tip of .*$", "led"]
+]
+
+NEO9 = [
+    [r"!newkitt", "led"]
+]
