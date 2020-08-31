@@ -5,6 +5,7 @@ import math
 import random
 from neopixellib2 import *
 from array import *
+from progmem import *
 import argparse
 import signal
 import sys
@@ -37,6 +38,18 @@ def SetAll(strip, color):
     """Wipe color across display a pixel at a time."""
     for i in range(strip.numPixels()):
         strip.setPixelColor(i, color)
+
+# Call progmem character animations by calling DigDug, Qbert, or BombJack
+def CharAnimation(gamename):
+    firstframe = play(gamename, 0)
+    secondframe = play(gamename, 1)
+
+    for i in range(255):
+        strip.setPixelColor(i, firstframe[i])
+    time.sleep(0.5)
+    for f in range(255):
+        strip.setPixelColor(f, secondframe[f])
+    time.sleep(0.5)
 
 def FadeRGB(strip):
     for i in range(0, 3):
