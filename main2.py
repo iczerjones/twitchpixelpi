@@ -134,11 +134,11 @@ def neo_progmem_BombJack():
     #Process arguments
     opt_parse()
     #Create NeoPixel object with appropriate configuration.
-    strip = Adafruit_NeoPixel(MATRIX_COUNT, MATRIX_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    strip = Adafruit_NeoPixel(MATRIX_COUNT, MATRIX_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, MATRIX_CHANNEL, LED_STRIP)
     #Intialize the library (must be called once before other functions).
     strip.begin()
     print("Calling:  CharAnimation(BombJack)")
-    CharAnimation(Bombjack)
+    CharAnimation(BombJack)
     Blank(strip)
 
 def neo_progmem_Qbert():
