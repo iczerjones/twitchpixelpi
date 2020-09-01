@@ -58,3 +58,7 @@ NEO8 = [
 NEO9 = [
     [r"!newkitt", "led"]
 ]
+
+MATRIX01 = [
+    [r"!bombjack", "led"]
+]

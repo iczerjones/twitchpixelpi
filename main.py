@@ -71,6 +71,10 @@ def bot_loop():
                 if re.match(pattern[0], message):
                     main2.neo_loop9()
 
+            for pattern in config.MATRIX01:
+                if re.match(pattern[0], message):
+                    main2.neo_progmem_BombJack()
+
             for pattern in config.BLANK:
                 if re.match(pattern[0], message):
                     main2.blank()
