@@ -43,7 +43,7 @@ def SetAll(strip, color):
         strip.setPixelColor(i, color)
 
 # Call progmem character animations by calling DigDug, Qbert, or BombJack
-def CharAnimation(gamename):
+def CharAnimation(strip, gamename):
     firstframe = play(gamename, 0)
     secondframe = play(gamename, 1)
 
