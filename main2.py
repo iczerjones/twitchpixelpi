@@ -138,7 +138,7 @@ def neo_progmem_BombJack():
     #Intialize the library (must be called once before other functions).
     strip.begin()
     print("Calling:  CharAnimation(BombJack)")
-    CharAnimation(BombJack)
+    CharAnimation(strip, BombJack)
     Blank(strip)
 
 def neo_progmem_Qbert():
@@ -149,7 +149,7 @@ def neo_progmem_Qbert():
     #Intialize the library (must be called once before other functions).
     strip.begin()
     print("Calling:  CharAnimation(Qbert)")
-    CharAnimation(Qbert)
+    CharAnimation(strip, Qbert)
     Blank(strip)
 
 def neo_progmem_DigDug():
@@ -160,7 +160,7 @@ def neo_progmem_DigDug():
     #Intialize the library (must be called once before other functions).
     strip.begin()
     print("Calling:  CharAnimation(DigDug)")
-    CharAnimation(DigDug)
+    CharAnimation(strip, DigDug)
     Blank(strip)
 
 """       
