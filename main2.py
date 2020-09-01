@@ -129,6 +129,40 @@ def neo_loop9():
     print("Calling:  NewKitt(strip, 255, 0, 0, 8, .01, .05)")
     NewKitt(strip, random.randint(0, 150), random.randint(0, 150), random.randint(0, 150), 8, .1, .1)
     Blank(strip)
+
+def neo_progmem_BombJack():
+    #Process arguments
+    opt_parse()
+    #Create NeoPixel object with appropriate configuration.
+    strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    #Intialize the library (must be called once before other functions).
+    strip.begin()
+    print("Calling:  CharAnimation(BombJack)")
+    CharAnimation(Bombjack)
+    Blank(strip)
+
+def neo_progmem_Qbert():
+    #Process arguments
+    opt_parse()
+    #Create NeoPixel object with appropriate configuration.
+    strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    #Intialize the library (must be called once before other functions).
+    strip.begin()
+    print("Calling:  CharAnimation(Qbert)")
+    CharAnimation(Qbert)
+    Blank(strip)
+
+def neo_progmem_DigDug():
+    #Process arguments
+    opt_parse()
+    #Create NeoPixel object with appropriate configuration.
+    strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
+    #Intialize the library (must be called once before other functions).
+    strip.begin()
+    print("Calling:  CharAnimation(DigDug)")
+    CharAnimation(DigDug)
+    Blank(strip)
+
 """       
 while True:
             print("Calling:  FadeRGB(strip)")
